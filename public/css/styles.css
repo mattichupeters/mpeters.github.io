@@ -1,0 +1,50 @@
+html {
+    background-color: #fff;
+}
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: ;
+}
+.site-masthead h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    background-color: #f4f6f9;
+    color: #54698d;
+    padding: 1rem 3rem;
+    margin: 0;
+
+}
+.banner {
+    padding: 1rem 3rem;
+}
+.banner h1 {
+    font-size: 2rem;
+    display: inline-block;
+    color: #fff;
+}
+.banner h2 {
+    font-size: 1.3rem;
+    color: #fff;
+}
+.banner a {
+    margin-top: 1rem;
+}
+main {
+    background-color: #fff;
+    color: #54698d;
+}
+main p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.toggle-btn {
+    text-align: center;
+    padding: 20px;
+}
+.toggle-btn p {
+    margin: 0px;
+    margin-top: 5px;
+}

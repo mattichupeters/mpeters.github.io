@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My React Website</title>
+    <link rel="stylesheet" type="text/css" href="/salesforce-ux/styles/salesforce-lightning-design-system.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/redux@4.1.0/dist/redux.js"></script>
+
+    <!-- my components -->
+    <script src="/js/banner1-placeholder.js" type="text/babel"></script>
+    <script src="/js/banner2-setState.js" type="text/babel"></script>
+    <script src="/js/banner3-reduxStore.js" type="text/babel"></script>
+    <script src="/js/toggle-btn.js" type="text/babel"></script>
+
+    <script type="text/javascript" src="<%- beaconURL %>"></script>
+</head>
+<body>
+
+    <main class="site-main slds-order_1" role="main" id="site-main-content" tabindex="-1">
+        <header class="site site-masthead slds-grid slds-wrap">
+            <div class="site-masthead-title slds-has-flexi-truncate slds-align-middle">
+                <h1 title="React App">My React Website</h1>
+            </div>
+        </header>
+
+        <!-- 1. IS replaces placeholder React component content-->
+        <div id="banner1"></div>
+
+         <!-- 2. IS updates React component state directly -->
+        <div id="banner2"></div>
+        
+        <!-- 3. IS updates store which React component subscribes to -->
+        <div id="banner3"></div>
+
+        <!-- 4. Server side rendered React component which uses Event API and server side campaigns-->
+        <div id="banner4">
+	        <% if (typeof campaigns !== 'undefined') { %>
+	        	<%- campaigns[0].html %>
+	        <% } %>
+        </div>
+
+        <div id="container"></div>
+
+
+    </main>
+
+</body>
+</html>
